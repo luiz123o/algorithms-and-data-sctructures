@@ -1,15 +1,5 @@
 # Variáveis
 
-Cronograma: https://www.notion.so/05-Variaveis-05e07deed82f42ac934382e9c3949b00
-Curso: https://www.notion.so/Javascript-Master-Class-6f6cdee11c4b4dc8a2fab2085f0403bd
-Habilidades: https://www.notion.so/JAVASCRIPT-0cecf58fb3f04d1a9510d1feebd28ca0
-Projetos: https://www.notion.so/Desenvolvedor-Back-End-554cb8cb324e44e4b86342245c242fec, https://www.notion.so/Desenvolvedor-Front-End-1b5f2b8f0a7a4ceeac30f4b32252ff81
-Status: Ativa
-Tags: Aula
-Última edição: May 19, 2021 11:22 AM
-
-# Variáveis
-
 > Uma descrição das variáveis e formas de usa-las
 
 - Inicialização
