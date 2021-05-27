@@ -137,20 +137,56 @@ const javascript = {
     paradigm: "OO e Functional"
 }
 Object.preventExtensions(javascript)
-    //Modificando o objeto
+    //Modificando o objeto permite
 javascript.name = "ECMAScript"
-    //Adicionando uma nova propriedade
+    //Adicionando uma nova propriedade não permite
 javascript.author = "Brendan Eich"
     // Ele é ignorada
+delete javascript.name // Ele permite exclusão
+
+console.log(Object.isExtensible(javascript)) // retorna true pois foi aplicado o present
 
 
 /**
  * seal
  * Impede que o objeto tenha novas propriedades ou apague propriedades existentes, mas permite modificar propriedades existentes
  */
+const javascript = {
+    name: "JavaScript",
+    year: 1995,
+    paradigm: "OO e Functional"
+}
+Object.seal(javascript)
+
+//Modificando o objeto ele permite
+javascript.name = "ECMAScript"
+    //Adicionando uma nova propriedade ele não permite
+javascript.author = "Brendan Eich"
+    // o delete é ignorado 
+delete javascript.year
+console.log(Object.isSealed(javascript)) // retorna true pois foi aplicado o seel
 
 
 /**
  * freeze
  * Impede que o objeto tenha novas propriedades, apague ou modifique propriedades existentes
  */
+const javascript = {
+    name: "JavaScript",
+    year: 1995,
+    paradigm: "OO e Functional"
+}
+Object.freeze(javascript)
+
+//Modificando o objeto ele não permite
+javascript.name = "ECMAScript"
+    //Adicionando uma nova propriedade ele não permite
+javascript.author = "Brendan Eich"
+    // o delete é ignorado não permite
+delete javascript.year
+
+console.log(Object.isFrozen(javascript)) // retorna true pois foi aplicado o freeze
+
+//Obs.: só permite a leitura do objeto
+
+// Não é possivel alterar o protótipo do objeto, pois ele se torna imutavel

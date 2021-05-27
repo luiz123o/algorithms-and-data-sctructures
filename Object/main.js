@@ -50,6 +50,7 @@ const book = {
     [key5]: true
 };
 
+
 /**
  * Atribuição por referencia
  * 
@@ -86,8 +87,9 @@ const book = {
     language: "English",
     available: true
 };
-const book2 = {}
+let book2 = {}
 
 for (let key in book) {
     book2[key] = book[key]
 }
+console.log(book2)
